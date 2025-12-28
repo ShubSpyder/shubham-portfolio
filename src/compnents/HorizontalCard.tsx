@@ -7,9 +7,10 @@ interface HorizontalCardProps {
     url: string;
     badge?: string;
     target?: string;
+    disclaimer?: string;
 }
 
-const HorizontalCard = ({ title, img, desc, url, badge, target }: HorizontalCardProps) => {
+const HorizontalCard = ({ title, img, desc, url, badge, target, disclaimer }: HorizontalCardProps) => {
     return (
         <div className="rounded-lg bg-base-100 hover:shadow-xl transition-all mb-10 ease-in-out hover:scale-[102%]">
             <Link to={url} target={target}>
@@ -18,7 +19,7 @@ const HorizontalCard = ({ title, img, desc, url, badge, target }: HorizontalCard
                         <img
                             src={img}
                             alt={title}
-                            className="max-w-[750px] md:max-w-[20rem] rounded-lg shadow-2xl"
+                            className="max-w-full md:max-w-[13rem] rounded-lg shadow"
                         />
                     )}
                     <div className="grow w-full">
@@ -27,6 +28,11 @@ const HorizontalCard = ({ title, img, desc, url, badge, target }: HorizontalCard
                             {badge && <div className="badge badge-secondary ml-2">{badge}</div>}
                         </h1>
                         <p className="py-1 text-1xl">{desc}</p>
+                        {disclaimer && (
+                            <p className="text-xs text-gray-400 italic mt-2">
+                                {disclaimer}
+                            </p>
+                        )}
                     </div>
                 </div>
             </Link>

@@ -6,6 +6,8 @@ import Sidebar from './compnents/Sidebar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import CV from './pages/CV/CV';
 
 const App = () => {
 
@@ -29,11 +31,12 @@ const App = () => {
           <Header toggleDrawer={toggleDrawer} />
 
 
-          <main className="p-6 pt-10 lg:max-w-[900px] md:pt-16">
-
+          <main className="p-6 pt-10 lg:pt-0 lg:max-w-[900px] max-w-[100vw] mx-auto">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/cv" element={<CV />} />
             </Routes>
           </main>
         </div>
