@@ -18,8 +18,8 @@ const Contact = () => {
                                 Email
                             </h2>
                             <p className="text-gray-600">
-                                <a href="mailto:shubhamshukla@example.com" className="link link-hover">
-                                    shubhamshukla@example.com
+                                <a href="mailto:shubham.is@protonmail.com" className="link link-hover">
+                                    shubham.is@protonmail.com
                                 </a>
                             </p>
                         </div>
@@ -34,8 +34,8 @@ const Contact = () => {
                                 Phone
                             </h2>
                             <p className="text-gray-600">
-                                <a href="tel:+919876543210" className="link link-hover">
-                                    +91 98765 43210
+                                <a href="tel:+918779720105" className="link link-hover">
+                                    +91 87797 20105
                                 </a>
                             </p>
                         </div>
@@ -65,8 +65,8 @@ const Contact = () => {
                                 LinkedIn
                             </h2>
                             <p className="text-gray-600">
-                                <a href="https://linkedin.com/in/shubhamshukla" target="_blank" rel="noopener noreferrer" className="link link-hover">
-                                    linkedin.com/in/shubhamshukla
+                                <a href="https://www.linkedin.com/in/shubham-shukla-719303201/" target="_blank" rel="noopener noreferrer" className="link link-hover">
+                                    linkedin.com/in/shubham-shukla-719303201
                                 </a>
                             </p>
                         </div>
@@ -82,8 +82,8 @@ const Contact = () => {
                             GitHub
                         </h2>
                         <p className="text-gray-600">
-                            <a href="https://github.com/shubhamshukla" target="_blank" rel="noopener noreferrer" className="link link-hover">
-                                github.com/shubhamshukla
+                            <a href="https://github.com/ShubSpyder" target="_blank" rel="noopener noreferrer" className="link link-hover">
+                                github.com/ShubSpyder
                             </a>
                         </p>
                     </div>

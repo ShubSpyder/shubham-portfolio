@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <defs>
+        <clipPath id="circleView">
+            <circle cx="32" cy="32" r="30" />
+        </clipPath>
+    </defs>
+
+    <!-- Background -->
+    <circle cx="32" cy="32" r="32" fill="#4B5563" />
+
+    <g clip-path="url(#circleView)">
+        <!-- Body/Shirt -->
+        <path d="M12 56 C 12 45, 52 45, 52 56 L 52 64 L 12 64 Z" fill="#1F2937" />
+        <path d="M24 56 L 32 62 L 40 56 L 32 50 Z" fill="#e5e7eb" opacity="0.1" /> <!-- Shirt collar
+        detail -->
+
+        <!-- Neck -->
+        <rect x="26" y="40" width="12" height="10" fill="#EAB398" />
+
+        <!-- Face -->
+        <ellipse cx="32" cy="30" rx="14" ry="16" fill="#EAB398" />
+
+        <!-- Hair -->
+        <path
+            d="M18 24 C 18 10, 46 10, 46 24 C 46 28, 44 32, 42 30 C 42 30, 40 18, 32 18 C 24 18, 22 30, 22 30 C 20 32, 18 28, 18 24 Z"
+            fill="#111827" />
+
+        <!-- Smile -->
+        <path d="M26 36 Q 32 40 38 36" stroke="#9A5B48" stroke-width="1.5" fill="none"
+            stroke-linecap="round" />
+
+        <!-- Eyes -->
+        <circle cx="26" cy="28" r="1.5" fill="#1F2937" />
+        <circle cx="38" cy="28" r="1.5" fill="#1F2937" />
+    </g>
+</svg>
