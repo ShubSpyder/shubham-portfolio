@@ -3,16 +3,21 @@ import { useEffect, useState } from "react"
 
 const Header = ({ toggleDrawer }: { toggleDrawer: () => void }) => {
 
-    const [isDark, setIsDark] = useState(false)
+    const [isDark, setIsDark] = useState(() => {
+        const savedTheme = localStorage.getItem('theme');
+        return savedTheme === 'dark';
+    });
 
     useEffect(() => {
-        const html = document.documentElement
+        const html = document.documentElement;
         if (isDark) {
-            html.setAttribute('data-theme', 'dark')
+            html.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
         } else {
-            html.removeAttribute('data-theme')
+            html.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
         }
-    }, [isDark])
+    }, [isDark]);
 
     return (
         <header className="flex justify-between md:justify-end items-center">
